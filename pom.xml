@@ -17,7 +17,7 @@
 		<spring.version>3.2.5.RELEASE</spring.version>
 		<slf4j.version>1.7.5</slf4j.version>
 		<guava.version>15.0</guava.version>
-		<dubbo.version>2.4.12a-SNAPSHOT</dubbo.version>
+		<dubbo.version>2.4.11</dubbo.version>
 		<logback.version>1.0.13</logback.version>
 		<javassist.version>3.18.2-GA</javassist.version>
 	</properties>
@@ -228,14 +228,5 @@
 
 		</plugins>
 	</build>
-
-	<repositories>
-		<repository>
-			<id>sohu.nexus</id>
-			<url>
-                http://index.tv.sohuno.com/nexus/content/groups/public
-            </url>
-		</repository>
-	</repositories>
 
 </project>
