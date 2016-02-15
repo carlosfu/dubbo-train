@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd"
+       default-autowire="byName">
+	
+	<bean id="redisVideoInfoMock" class="com.sohu.tv.dubbo.train.provider.mock.RedisVideoInfoMock"/>
+
+	<bean id="videoService" class="com.sohu.tv.dubbo.train.provider.service.impl.VideoServiceImpl" />
+
+	<dubbo:service interface="com.sohu.tv.dubbo.train.api.VideoService" ref="videoService" />
+
+</beans>
